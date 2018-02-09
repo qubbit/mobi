@@ -1,9 +1,26 @@
 module Mobi
   module Header
     class ExthHeader
-      RECORD_TYPES = { 100 => :author, 101 => :publisher, 102 => :imprint, 103 => :description, 104 => :isbn, 105 => :subject,
-                       106 => :published_at, 107 => :review, 108 => :contributor, 109 => :rights, 110 => :subject_code,
-                       111 => :type, 112 => :source, 113 => :asin, 114 => :version }
+      RECORD_TYPES = {
+        100 => :author,
+        101 => :publisher,
+        102 => :imprint,
+        103 => :description,
+        104 => :isbn,
+        105 => :subject,
+        106 => :published_at,
+        107 => :review,
+        108 => :contributor,
+        109 => :rights,
+        110 => :subject_code,
+        111 => :type,
+        112 => :source,
+        113 => :asin,
+        114 => :version,
+        117 => :adult,
+        201 => :coveroffset,
+        202 => :thumboffset
+      }
 
       attr_reader *RECORD_TYPES.values
 
